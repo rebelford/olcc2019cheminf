@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#
+# jupyter tool
+#
+/usr/bin/invoke_app "$@" -t hubtoolshortname \
+                         -C "start_jupyter -T @tool -t hubtoolshortname.ipynb" \
+                         -u anaconda-X \
+                         -r none \
+                         -w headless
